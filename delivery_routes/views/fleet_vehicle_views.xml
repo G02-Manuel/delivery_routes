@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_fleet_vehicle_form_inherit_ruta" model="ir.ui.view">
+        <field name="name">fleet.vehicle.form.inherit.ruta</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='driver_id']" position="after">
+                <field name="route_id"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
